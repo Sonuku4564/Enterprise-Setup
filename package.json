@@ -9,14 +9,17 @@
     "build": "tsc",
     "lint": "eslint .",
     "lint-fix": "eslint --fix",
+    "format-check": "prettier . --check",
+    "format-fix": "prettier . --fix",
     "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-    "lint-staged": {
+  "lint-staged": {
     "*.ts": [
-      "npm run lint-fix"
+      "npm run lint-fix",
+      "npm run format-fix"
     ]
   },
   "type": "module",
@@ -26,8 +29,10 @@
     "@eslint/js": "^10.0.1",
     "@types/node": "^25.5.0",
     "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
     "lint-staged": "^16.3.3",
+    "prettier": "3.8.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.59.1"
