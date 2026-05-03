@@ -1,1 +1,1 @@
-console.log("Hello Node with Typescript");
+"Hello Node with Typescript"
